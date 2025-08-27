@@ -24,6 +24,7 @@ This project is for learning purposes and demonstrates how to build a **server-s
 
 ## 📂 Project Structure
 ejs-blog-app/
+│── controllers/ # Handle logic between routes & models
 │── models/ # Mongoose models (Post schema)
 │── routes/ # Express routes
 │── views/ # EJS templates

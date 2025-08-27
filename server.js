@@ -6,7 +6,7 @@ const app = express();
 //-----Connect DB------
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost:27017/mvc-design-pattern")
+  .connect("mongodb://localhost:27017/mvc-design-pattern-blog-app")
   .then(() => {
     console.log("DB has been connected");
   })
