@@ -1,19 +1,13 @@
 const express = require("express");
 
-const mongoose = require("mongoose");
-const { showCreateForm, showPosts } = require("../controllers/postController");
+
+const { showCreateForm, showPosts, createPostLogic } = require("../controllers/postController");
 
 
 // Router
 const postRouter = express.Router();
 
-//---Post model
-const postSchema = new mongoose.Schema({
-  title: String,
-  content: String,
-  author: String,
-});
-const Post = mongoose.model("Post", postSchema);
+
 
 
 
