@@ -54,7 +54,19 @@ Start the server
 
 Open 👉 ```http://localhost:3000```
 
+## 📸 Screenshot
+
+<h4> Home Page </h4>
+<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Home Page" width="500">
+
 ## 📸 Screenshots
+
+<h4>📝 Create a New Post</h4>
+<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Create Post Page" width="500">
+<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Create Post" width="500">
+
+<h4>All Posts</h4>
+<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Posts Page" width="500">
 
 ## 🔮 Future Improvements
 
