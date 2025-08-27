@@ -1,5 +1,6 @@
 const express = require("express");
 const PORT = 3000;
+const postRouter = require("./routes/postRouter");
 
 const app = express();
 
@@ -21,45 +22,13 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
 
-//---Post model
-const postSchema = new mongoose.Schema({
-  title: String,
-  content: String,
-  author: String,
-});
-const Post = mongoose.model("Post", postSchema);
-
-
 //!. Show Homepage
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-
-//! Show the create form
-app.get("/create", (req, res) => {
-  res.render("createPost");
-});
-
-
-//! To get all posts
-app.get("/list", async (req, res) => {
-  const posts = await Post.find();
-  res.render("list", { posts });
-});
-
-
-//! Create the post (The main logic)
-app.post("/create", async (req, res) => {
-  const { title, content, author } = req.body;
-  await Post.create({
-    title,
-    content,
-    author,
-  });
-  //redirect to the post list
-  res.redirect("/list");
-});
+//!--- Routes
+app.use("/", postRouter);
 
 
 //Start the server
