@@ -57,16 +57,14 @@ Open 👉 ```http://localhost:3000```
 ## 📸 Screenshot
 
 <h4> Home Page </h4>
-<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Home Page" width="500">
-
-## 📸 Screenshots
+<img src="https://github.com/MalingaBandara/ejs-blog-app/blob/main/Screenshots/index.png" alt="Home Page" width="500">
 
 <h4>📝 Create a New Post</h4>
-<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Create Post Page" width="500">
-<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Create Post" width="500">
+<img src="https://github.com/MalingaBandara/ejs-blog-app/blob/main/Screenshots/create-post.png" alt="Create Post Page" width="500">
+<img src="https://github.com/MalingaBandara/ejs-blog-app/blob/main/Screenshots/new-post.png" alt="Create Post" width="500">
 
 <h4>All Posts</h4>
-<img src="https://github.com/your-username/ejs-blog-app/blob/main/screenshots/create-post.png" alt="Posts Page" width="500">
+<img src="https://github.com/MalingaBandara/ejs-blog-app/blob/main/Screenshots/all-posts.png" alt="Posts Page" width="500">
 
 ## 🔮 Future Improvements
 
