@@ -1,6 +1,7 @@
 const express = require("express");
 
 const mongoose = require("mongoose");
+const { showCreateForm, showPosts } = require("../controllers/postController");
 
 
 // Router
@@ -17,29 +18,15 @@ const Post = mongoose.model("Post", postSchema);
 
 
 //! Show the create form
-postRouter.get("/create", (req, res) => {
-  res.render("createPost");
-});
+postRouter.get("/create", showCreateForm);
 
 
 //! To get all posts
-postRouter.get("/list", async (req, res) => {
-  const posts = await Post.find();
-  res.render("list", { posts });
-});
+postRouter.get("/list", showPosts);
 
 
 //! Create the post (The main logic)
-postRouter.post("/create", async (req, res) => {
-  const { title, content, author } = req.body;
-  await Post.create({
-    title,
-    content,
-    author,
-  });
-  //redirect to the post list
-  res.redirect("/list");
-});
+postRouter.post("/create", createPostLogic );
 
 
 module.exports = postRouter;
