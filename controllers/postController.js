@@ -1,6 +1,7 @@
 
 const Post = require("../model/Post");
 
+
 //! Show the create form
 const showCreateForm = (req, res) => {
     res.render("createPost");

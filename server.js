@@ -1,19 +1,9 @@
 const express = require("express");
 const PORT = 3000;
 const postRouter = require("./routes/postRouter");
+const utils = require("./utils/dbConnect");
 
 const app = express();
-
-//-----Connect DB------
-const mongoose = require("mongoose");
-mongoose
-  .connect("mongodb://localhost:27017/mvc-design-pattern-blog-app")
-  .then(() => {
-    console.log("DB has been connected");
-  })
-  .catch((e) => {
-    console.log(e);
-  });
 
 
 //!Configure ejs
